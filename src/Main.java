@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,6 +23,7 @@ public class Main {
         2 assignment
 
         */
+        //primitive datatype
 
         int age;
         age = 21;
@@ -34,10 +37,52 @@ public class Main {
         char gender = 'M';
         char grade = 'F';
 
+        boolean isStudent = true;
+        boolean notStudent = false;
+
         System.out.println(age);
         System.out.println("The year is "+ year);
         System.out.println("The quantity is "+ quantity);
         System.out.println("My gender is "+ gender);
+        System.out.println("Rajesh is a student " + isStudent);
+        System.out.println("Ramu is not a student " + notStudent);
+
+        // if else statements
+        if(isStudent){
+            System.out.println("everyone is a student");
+        }
+        else{
+            System.out.println("everyone is not a student");
+        }
+
+
+        //reference datatype
+        //1 - string
+
+        String name = "Raju";
+        System.out.println("Are you a student " + name);
+
+        // we will learn about other data type later
+        // now lets try how we take input method in jave so
+        // we use import.java.util.Scanner;
+
+        // after that we say use
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String nName = scanner.nextLine();
+        System.out.println("What is your age?");
+        int nAge = scanner.nextInt();
+        System.out.println("What is your CGPA?");
+        double nCGPA = scanner.nextDouble();
+
+        System.out.println("Your name is " + nName);
+        System.out.println("Your age is " + nAge);
+        System.out.println("Your CGPA is " + nCGPA);
+
+        scanner.close();
+
+
 
 
     }
