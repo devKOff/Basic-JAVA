@@ -75,10 +75,37 @@ public class Main {
         int nAge = scanner.nextInt();
         System.out.println("What is your CGPA?");
         double nCGPA = scanner.nextDouble();
+        System.out.println("Student: ");
+        boolean niStudent = scanner.nextBoolean();
+
 
         System.out.println("Your name is " + nName);
         System.out.println("Your age is " + nAge);
         System.out.println("Your CGPA is " + nCGPA);
+        System.out.println("Student :  " + niStudent);
+
+        //scanner1.close();
+
+
+        /*
+        So lets try to make a project to calculate the area of rectangle.
+        */
+
+        //Scanner scanner = new Scanner(System.in);
+
+        double length = 0;
+        double width = 0;
+        double area = 0;
+
+
+        System.out.println("What is your length?");
+        length = scanner.nextDouble();
+        System.out.println("What is your width?");
+        width = scanner.nextDouble();
+
+        area = length * width;
+        System.out.println("Area is " + area);
+
 
         scanner.close();
 
