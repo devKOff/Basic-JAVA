@@ -87,24 +87,6 @@ public class Main {
         //scanner1.close();
 
 
-        /*
-        So lets try to make a project to calculate the area of rectangle.
-        */
-
-        //Scanner scanner = new Scanner(System.in);
-
-        double length = 0;
-        double width = 0;
-        double area = 0;
-
-
-        System.out.println("What is your length?");
-        length = scanner.nextDouble();
-        System.out.println("What is your width?");
-        width = scanner.nextDouble();
-
-        area = length * width;
-        System.out.println("Area is " + area);
 
 
         scanner.close();
